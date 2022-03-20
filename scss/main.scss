@@ -127,3 +127,18 @@ main {
 .card.dialog {
     display: none;
 }
+
+.attribution {
+    position: absolute;
+    bottom: 30px;
+
+    a {
+        text-decoration: none;
+        color: $light-grey;
+        transition: all .5s;
+
+        &:hover {
+            color: $medium-grey;
+        }
+    }
+}
