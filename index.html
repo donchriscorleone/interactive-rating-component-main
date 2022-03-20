@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/main.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="main">
+    <div class="card grid">
+      <div class="card--icon">
+        <img class="btn__border" src="./images/icon-star.svg" alt="Star icon">
+      </div>
+      <div class="card--header">
+        <h1 class="card--header__title">How did we do?</h1>
+        <p class="card--header__sub">Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="card--body">
+        <ul class="card--list card--body--buttons">
+          <li class="card--list__item"><button class="btn btn__border btn__rate">1</button></li>
+          <li class="card--list__item"><button class="btn btn__border btn__rate">2</button></li>
+          <li class="card--list__item"><button class="btn btn__border btn__rate">3</button></li>
+          <li class="card--list__item"><button class="btn btn__border btn__rate">4</button></li>
+          <li class="card--list__item"><button class="btn btn__border btn__rate">5</button></li>
+        </ul>
+      </div>
+      <div class="card--actions">
+        <button class="btn btn--submit">Submit</button>
+      </div>
+    </div>
+    <div class="dialog card card--dialog grid grid--center">
+      <div class="card--icon">
+        <img class="" src="./images/illustration-thank-you.svg" alt="Star icon">
+        <p class="card--icon__sub">You selected 4 out of 5</p>
+      </div>
+      <div class="card--header text-center">
+        <h1 class="card--header__title">Thank you!</h1>
+        <p class="card--header__sub">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- <dialog>
+    <div class="card card--dialog grid grid--center">
+      <div class="card--icon">
+        <img class="" src="./images/illustration-thank-you.svg" alt="Star icon">
+        <p class="card--icon__sub">You selected 4 out of 5</p>
+      </div>
+      <div class="card--header text-center">
+        <h1 class="card--header__title">Thank you!</h1>
+        <p class="card--header__sub">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </dialog> -->
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

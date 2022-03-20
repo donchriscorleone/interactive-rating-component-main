@@ -1,0 +1,129 @@
+@import './variables.scss';
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-overpass;
+}
+
+body {
+    font-size: 15px;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: $very-dark-blue;
+}
+
+.card {
+    background: linear-gradient(to bottom, $dark-blue, $very-dark-blue);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 385px;
+    margin: 0 auto;
+}
+
+.card.grid {
+    display: grid;
+    row-gap: 15px;
+}
+
+.btn__border {
+    background-color: rgba($color: $light-grey, $alpha: 0.2);
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.card--icon {
+    .card--icon__sub {
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: rgba($color: $light-grey, $alpha: 0.2);
+        color: $orange;
+        margin-top: 20px;
+    }
+}
+
+.card--header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card--header__title {
+    color: $white;
+    font-weight: 700;
+}
+
+.card--header__sub {
+    color: $medium-grey;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card--body {
+
+}
+
+.card--list {
+    list-style: none;
+    margin: 15px auto 10px;
+}
+
+.card--body--buttons {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: $light-grey;
+    cursor: pointer;
+    transition: all .4s;
+
+    &:hover {
+        background-color: $light-grey;
+        color: $white;
+    }
+}
+
+.card--actions {
+    .btn--submit {
+        width: 100%;
+        border-radius: 25px;
+        color: #bebebe;
+        text-transform: uppercase;
+        background-color: $orange;     
+        padding-top: 15px;   
+        padding-bottom: 15px;
+
+        &:hover {
+            background-color: #bebebe;
+            color: $orange;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grid.grid--center {
+    justify-items: center;
+    row-gap: 30px;
+}
+
+.card.dialog {
+    display: none;
+}
